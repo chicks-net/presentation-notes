@@ -22,8 +22,11 @@ cargo run --
 ```bash
 echo 'try:
   cargo run --' > justfile
+cat justfile
 
 just
+
+just --list
 
 git add .
 git cim '🪨 base of demo'
@@ -33,6 +36,25 @@ git push
 ## Changing directories or not
 
 ```bash
+echo 'try:
+  cargo run --
+
+[no-cd]
+ls:
+  ls -ltr
+
+top-ls:
+  ls -ltr' > justfile
+cat justfile
+
+just --list
+
+cd src
+just ls
+just top-ls
+
+git add .
+git cim '📃 directory part of demo'
 ```
 
 ## Make-like dependencies
@@ -68,5 +90,10 @@ git push
 https://github.com/chicks-net/google-plus-posts-dumper/blob/main/.github/workflows/verify.yaml
 
 ```bash
+mkdir -p .github/workflows
+curl https://raw.githubusercontent.com/chicks-net/google-plus-posts-dumper/refs/heads/main/.github/workflows/verify.yaml -o .github/workflows/verify.yaml
+view .github/workflows/verify.yaml
+
+# ...
 ```
 
