@@ -102,14 +102,50 @@ git cim '🚜 dependencies and argument part of demo'
 ## Documenting recipes
 
 ```bash
+echo '# run it again
+try: check
+  cargo run --
+
+# unit testing
+check:
+  cargo clippy
+  cargo test --workspace
+
+# add a crate
+newdep crate_name: check
+  cargo add {{crate_name}}
+  cargo doc' > justfile
 ```
 
 ```bash
+git diff
+just --list
+```
+
+```bash
+git add .
+git cim '📚 documentation is easy'
 ```
 
 ## Extracting data from TOML or JSON
 
 ```bash
+echo '
+# extract version
+@version:
+  toml get -r Cargo.toml package.version' >> justfile
+```
+
+```bash
+git diff
+just --list
+just version
+just --version
+```
+
+```bash
+git add .
+git cim '📖 write extraction formula once, reuse infinite times'
 ```
 
 ## Creating a pull request
@@ -123,8 +159,6 @@ git cim '🚜 dependencies and argument part of demo'
 ```
 
 ## github action
-
-https://github.com/chicks-net/google-plus-posts-dumper/blob/main/.github/workflows/verify.yaml
 
 ```bash
 mkdir -p .github/workflows
