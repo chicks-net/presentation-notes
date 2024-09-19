@@ -23,11 +23,15 @@ cargo run --
 echo 'try:
   cargo run --' > justfile
 cat justfile
+```
 
+```bash
 just
 
 just --list
+```
 
+```bash
 git add .
 git cim '🪨 base of demo'
 git push
@@ -46,13 +50,19 @@ ls:
 top-ls:
   ls -ltr' > justfile
 cat justfile
+```
 
+```bash
 just --list
+```
 
+```bash
 cd src
 just ls
 just top-ls
+```
 
+```bash
 git add .
 git cim '📃 directory part of demo'
 ```
@@ -60,6 +70,33 @@ git cim '📃 directory part of demo'
 ## Make-like dependencies
 
 ```bash
+echo 'try: check
+  cargo run --
+
+check:
+  cargo clippy
+  cargo test --workspace
+
+newdep crate_name: check
+  cargo add {{crate_name}}
+  cargo doc' > justfile
+```
+
+```bash
+git diff
+cat justfile
+```
+
+```bash
+just check
+just
+just newdep glob
+```
+
+```bash
+git stp
+git add .
+git cim '🚜 dependencies and argument part of demo'
 ```
 
 ## Documenting recipes
