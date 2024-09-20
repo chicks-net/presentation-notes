@@ -151,6 +151,58 @@ git cim '📖 write extraction formula once, reuse infinite times'
 ## Creating a pull request
 
 ```bash
+echo '
+release_branch := "main"
+
+# error if not on a git branch
+on_a_branch:
+  #!/bin/bash
+
+  # thanks to https://stackoverflow.com/a/12142066/2002471
+
+  if [[ $(git rev-parse --abbrev-ref HEAD) == "{{release_branch}}" ]]; then
+    echo "You are on branch {{release_branch}} (the release branch) so you are not ready to start a PR."
+    exit 100
+  fi' >> justfile
+```
+
+```bash
+git diff
+just on_a_branch
+git co -b example_branch
+just on_a_branch
+echo $?
+```
+
+```bash
+echo '
+# thanks to https://stackoverflow.com/a/7293026/2002471 for the perfect git incantation
+last_commit_message := `git log -1 --pretty=%B | grep '.'`
+
+# PR create
+pr: on_a_branch
+  git stp
+  git pushup
+  gh pr create --title "{{last_commit_message}}" --body "{{last_commit_message}} (Automated in 'justfile'.)"
+
+# PR merge and return to main branch
+merge: on_a_branch
+  gh pr merge -s
+  git co {{release_branch}}
+  git pull' >> justfile
+```
+
+```bash
+git diff
+git add .
+git cim '📓 creating a pull request without touching the browser'
+```
+
+```bash
+git hist
+just --list
+just pr
+just merge
 ```
 
 ## Inline Perl or LUA
