@@ -30,6 +30,7 @@ So far I like:
   * Changing directories or not
   * Make-like dependencies
   * Documenting recipes
+  * Tabs or spaces are fine
   * Extracting data from TOML or JSON
   * Creating a pull request
   * Inline Perl or LUA

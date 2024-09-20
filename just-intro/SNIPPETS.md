@@ -32,6 +32,7 @@ just --list
 ```
 
 ```bash
+git help -a | tail -14
 git add .
 git cim '🪨 base of demo'
 git push
@@ -127,6 +128,34 @@ git add .
 git cim '📚 documentation is easy'
 ```
 
+## Tabs or spaces are fine
+
+```bash
+echo '# run it again
+try: check
+  cargo run --
+
+# unit testing
+check:
+    cargo clippy
+    cargo test --workspace
+
+# add a crate
+newdep crate_name: check
+    cargo add {{crate_name}}
+    cargo doc' > justfile
+```
+
+```bash
+git diff
+just --list
+just check
+```
+
+```bash
+git add .
+git cim '🚚 tabs or spaces are fine'
+```
 ## Extracting data from TOML or JSON
 
 ```bash
@@ -205,18 +234,60 @@ just pr
 just merge
 ```
 
-## Inline Perl or LUA
+## Inline Perl and LUA
 
 ```bash
+git co -b all_scripting_languages_welcomed
+```
+
+```bash
+echo '
+# say hello chicks
+hello_chicks:
+        #!/usr/bin/env perl
+        print "hello chicks\\n";
+
+# say howdy internet people
+howdy_net:
+        #!/usr/bin/env lua
+        print("howdy internet people");' >> justfile
+```
+
+```bash
+git diff
+just --list
+just hello_chicks
+just howdy_net
+```
+
+```bash
+git add .
+git cim '📗 add fun scripting language examples'
+just br
+just pr
+just merge
 ```
 
 ## github action
 
 ```bash
+git co -b add-some-github-action
+```
+
+```bash
 mkdir -p .github/workflows
 curl https://raw.githubusercontent.com/chicks-net/google-plus-posts-dumper/refs/heads/main/.github/workflows/verify.yaml -o .github/workflows/verify.yaml
 view .github/workflows/verify.yaml
-
-# ...
 ```
 
+```bash
+git add .github
+git stp
+git cim '📒 add github action'
+just pr
+# gh pr view --web
+gh workflow view Verify
+gh workflow view Verify
+gh workflow view Verify
+just merge
+```
