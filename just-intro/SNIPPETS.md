@@ -2,6 +2,12 @@
 
 ## Start
 
+### Why should we try this tool?
+
+```bash
+glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/FEATURES.md
+```
+
 ### Create repo
 
 ```bash
@@ -300,4 +306,10 @@ gh workflow view Verify
 gh workflow view Verify
 gh workflow view Verify
 just merge
+```
+
+### Why should we try this tool?
+
+```bash
+glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/CONCLUSION.md
 ```
