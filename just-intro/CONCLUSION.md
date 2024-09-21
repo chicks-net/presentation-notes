@@ -16,7 +16,7 @@ for accelerating my development process.
 * https://github.com/casey/just - the git repo for `just`
 * casey/just#2357 led to https://www.youtube.com/watch?v=hgNN2wOE7lc
   * Comparison is mostly to Taskfile, which I don’t care about at all.
-  * Reduces developer toil without creating new problems.
+  * He whines about tabs in source code, this seems silly.
 
 ## This is on Youtube so please feed the algorithm.
 
