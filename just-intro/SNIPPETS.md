@@ -5,8 +5,8 @@
 ### Create repo
 
 ```bash
-gh repo create chicks-net/just-demo-pre2 --private --description "demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
-cd just-demo-pre2
+gh repo create chicks-net/just-demo-pre3 --private --description "demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
+cd just-demo-pre3
 ```
 
 ### Rust hello world
@@ -280,7 +280,13 @@ git co -b add-some-github-action
 
 ```bash
 mkdir -p .github/workflows
+```
+
+```bash
 curl https://raw.githubusercontent.com/chicks-net/google-plus-posts-dumper/refs/heads/main/.github/workflows/verify.yaml -o .github/workflows/verify.yaml
+```
+
+```bash
 view .github/workflows/verify.yaml
 ```
 
