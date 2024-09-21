@@ -5,9 +5,8 @@
 ### Create repo
 
 ```bash
-gh repo create chicks-net/just-demo-pre1 --private --description "demo of just" --readme
-gh repo clone chicks-net/just-demo-pre1
-cd just-demo-pre1
+gh repo create chicks-net/just-demo-pre2 --private --description "demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
+cd just-demo-pre2
 ```
 
 ### Rust hello world
@@ -50,10 +49,10 @@ ls:
 
 top-ls:
   ls -ltr' > justfile
-cat justfile
 ```
 
 ```bash
+cat justfile
 just --list
 ```
 
@@ -64,6 +63,7 @@ just top-ls
 ```
 
 ```bash
+cd ..
 git add .
 git cim '📃 directory part of demo'
 ```
@@ -84,8 +84,8 @@ newdep crate_name: check
 ```
 
 ```bash
-git diff
 cat justfile
+just --list
 ```
 
 ```bash
@@ -96,6 +96,7 @@ just newdep glob
 
 ```bash
 git stp
+git diff Cargo.toml
 git add .
 git cim '🚜 dependencies and argument part of demo'
 ```
@@ -153,8 +154,7 @@ just check
 ```
 
 ```bash
-git add .
-git cim '🚚 tabs or spaces are fine'
+git add . &&  git cim '🚚 tabs or spaces are fine'
 ```
 ## Extracting data from TOML or JSON
 
@@ -173,8 +173,11 @@ just --version
 ```
 
 ```bash
-git add .
-git cim '📖 write extraction formula once, reuse infinite times'
+git add . &&  git cim '📖 write extraction formula once, reuse infinite times'
+```
+
+```bash
+git push
 ```
 
 ## Creating a pull request
@@ -223,8 +226,7 @@ merge: on_a_branch
 
 ```bash
 git diff
-git add .
-git cim '📓 creating a pull request without touching the browser'
+git add . &&  git cim '📓 creating a pull request without touching the browser'
 ```
 
 ```bash
@@ -261,8 +263,10 @@ just howdy_net
 ```
 
 ```bash
-git add .
-git cim '📗 add fun scripting language examples'
+git add . &&  git cim '📗 add fun scripting language examples'
+```
+
+```bash
 just br
 just pr
 just merge
