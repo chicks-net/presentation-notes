@@ -2,6 +2,12 @@
 
 ## Start
 
+### Opening title
+
+```bash
+glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/OPENING.md
+```
+
 ### Why should we try this tool?
 
 ```bash
