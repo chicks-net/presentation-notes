@@ -17,7 +17,7 @@ glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/
 ### Create repo
 
 ```bash
-gh repo create chicks-net/just-demo --public --description "demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
+gh repo create chicks-net/just-demo --public --description "just a demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
 cd just-demo
 ```
 
@@ -25,7 +25,7 @@ cd just-demo
 
 ```bash
 cargo init .
-cargo run --
+cargo run
 ```
 
 ### Rust in just
