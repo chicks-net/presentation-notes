@@ -18,6 +18,9 @@ glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/
 
 ```bash
 gh repo create chicks-net/just-demo2 --public --description "just a demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
+```
+
+```bash
 cd just-demo2
 ```
 
@@ -33,10 +36,11 @@ cargo run
 ```bash
 echo 'try:
   cargo run --' > justfile
-cat justfile
 ```
 
 ```bash
+cat justfile
+
 just
 
 just --list
