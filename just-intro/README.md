@@ -2,6 +2,14 @@
 
 I want to make a nice intro video about `just`.
 
+## ToC
+
+* [Snippets](./SNIPPETS.md) - copy and paste snippets for the recorded demo
+* Slides
+  * [Opening](./OPENING.md) - title slide
+  * [Features](./FEATURES.md) - intro/features slide
+  * [Conclusion](./CONCLUSION.md) - closing slide
+
 ## Links
 
 * https://just.systems/man/en/ - the good view of the docs
@@ -15,7 +23,7 @@ I want to make a nice intro video about `just`.
 
 So far I like:
 
-* Use just to speed development
+* Using just to speed development
 
 ## Outline
 
