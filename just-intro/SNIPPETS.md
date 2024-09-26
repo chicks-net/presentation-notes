@@ -303,7 +303,7 @@ curl https://raw.githubusercontent.com/chicks-net/google-plus-posts-dumper/refs/
 ```
 
 ```bash
-view .github/workflows/verify.yaml
+bat .github/workflows/verify.yaml
 ```
 
 ```bash
