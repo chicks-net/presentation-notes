@@ -5,13 +5,13 @@
 ### Opening title
 
 ```bash
-glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/OPENING.md
+clear ; glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/OPENING.md
 ```
 
 ### Why should we try this tool?
 
 ```bash
-glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/FEATURES.md
+glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/FEATURES.md
 ```
 
 ### Create repo
@@ -323,5 +323,5 @@ just merge
 ### Why should we try this tool?
 
 ```bash
-glow https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/CONCLUSION.md
+glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/CONCLUSION.md
 ```
