@@ -12,6 +12,7 @@ the github CLI (`gh` command) recently and it has been great for accelerating my
 * https://just.systems/man/en/ - the good view of the docs
 * https://github.com/casey/just - the git repo for `just`
 * casey/just#2357 led to https://www.youtube.com/watch?v=hgNN2wOE7lc
+  * Impressive production values.  (I've got a long way to go here.)
   * Comparison is mostly to Taskfile, which I don’t care about at all.
   * He whines about tabs in source code, this seems silly.
 * https://github.com/chicks-net/chicks-home/blob/master/.gitconfig#L10 for my `git` aliases.
