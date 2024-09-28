@@ -23,9 +23,9 @@ for accelerating my development process.
 
 * Thanks to [Casey Rodarmor](https://github.com/casey) for building and supporting this fun tool.
 * Thanks to github for not getting worse after Microsoft.
-* Thanks to vim for proving 70's-era technology still has relevance to "modern" computing.
-* Thanks to youtube for functioning as a global library of knowledge.
-* Thanks to figlet and tmux for being great free software projects
+* Thanks to `vim` for proving 70's-era technology still has relevance to "modern" computing.
+* Thanks to youtube for teaching me so many things through the years.
+* Thanks to `figlet` and `tmux` for being very helpful and featureful free software projects.
 
 ## This is on Youtube so please feed the algorithm.
 

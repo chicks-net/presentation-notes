@@ -39,7 +39,7 @@ echo 'try:
 ```
 
 ```bash
-cat justfile
+bat justfile
 
 just
 
@@ -68,7 +68,7 @@ top-ls:
 ```
 
 ```bash
-cat justfile
+bat justfile
 just --list
 ```
 
@@ -100,7 +100,7 @@ newdep crate_name: check
 ```
 
 ```bash
-cat justfile
+bat justfile
 just --list
 ```
 
@@ -146,6 +146,8 @@ git cim '📚 documentation is easy'
 ```
 
 ## Tabs or spaces are fine
+
+Last overwrite to show how small the diff is.
 
 ```bash
 echo '# run it again
@@ -215,7 +217,7 @@ on_a_branch:
 ```
 
 ```bash
-git diff
+bat justfile
 just on_a_branch
 git co -b example_branch
 just on_a_branch
