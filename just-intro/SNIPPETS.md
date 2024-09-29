@@ -17,11 +17,11 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 ### Create repo
 
 ```bash
-gh repo create chicks-net/just-demo2 --public --description "just a demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
+gh repo create chicks-net/just-demo3 --public --description "just a demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
 ```
 
 ```bash
-cd just-demo2
+cd just-demo3
 ```
 
 ### Rust hello world
@@ -174,7 +174,7 @@ just check
 ```bash
 git add . &&  git cim '🚚 tabs or spaces are fine'
 ```
-## Extracting data from TOML or JSON
+## Extracting data from TOML
 
 ```bash
 echo '
