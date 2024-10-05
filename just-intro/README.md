@@ -4,7 +4,9 @@ I want to make a nice intro video about `just`.
 
 ## ToC
 
-* [Snippets](./SNIPPETS.md) - copy and paste snippets for the recorded demo
+* Snippets - copy and paste snippets for the recorded demo
+  * [Snippets 1](./SNIPPETS.md) - the snippets used for the [youtube](https://youtu.be/m7ZCnGnYyvs?si=QNvUZJiGo20FVdnD)
+  * [Snippets 2](./SNIPPETS2.md) - the snippets used for subsequent live demos
 * Slides
   * [Opening](./OPENING.md) - title slide
   * [Features](./FEATURES.md) - intro/features slide
