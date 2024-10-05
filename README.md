@@ -1,6 +1,7 @@
 # chicks-net/presentation-notes
 
 ![GitHub License](https://img.shields.io/github/license/chicks-net/presentation-notes)
+![GitHub repo size](https://img.shields.io/github/repo-size/chicks-net/presentation-notes)
 
 Notes, links, and citations for presentations, videos, etc.
 
