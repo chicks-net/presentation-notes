@@ -17,11 +17,11 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 ### Create repo
 
 ```bash
-gh repo create chicks-net/just-demo4 --private --description "just a demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
+gh repo create chicks-net/just-demo5 --private --description "just a demo of just" --add-readme --homepage "https://github.com/chicks-net/presentation-notes/tree/main/just-intro" --disable-issues --gitignore Rust --clone
 ```
 
 ```bash
-cd just-demo4
+cd just-demo5
 ```
 
 ### Rust hello world
@@ -322,10 +322,18 @@ just merge
 
 ## optional and improvisational
 
-* demo OS and grouping decorators (`just` calls decorators "attributes")
-* aliases
+* demo OS and grouping decorators (`just` calls decorators "attributes") `[group('Utility')]`
+* aliases `alias yo := howdy_net`
 * [bash strict mode](https://just.systems/man/en/safer-bash-shebang-recipes.html)
-* timestamps (`just --timestamp`)
+* timestamps (`just --timestamp check`)
+
+## cleanup
+
+```
+git add . &&  git cim '🧹 cleanup'
+git push
+gh repo archive --yes
+```
 
 ## Why should we try this tool?
 
