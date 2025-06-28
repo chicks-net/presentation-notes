@@ -8,7 +8,7 @@
 clear ; glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/OPENING.md
 ```
 
-### Why should we try this tool?
+### Why should we try this tool? (intro)
 
 ```bash
 glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/FEATURES.md
@@ -174,6 +174,7 @@ just check
 ```bash
 git add . &&  git cim '🚚 tabs or spaces are fine'
 ```
+
 ## Extracting data from TOML
 
 ```bash
@@ -322,20 +323,20 @@ just merge
 
 ## optional and improvisational
 
-* demo OS and grouping decorators (`just` calls decorators "attributes") `[group('Utility')]`
-* aliases `alias yo := howdy_net`
-* [bash strict mode](https://just.systems/man/en/safer-bash-shebang-recipes.html)
-* timestamps (`just --timestamp check`)
+- demo OS and grouping decorators (`just` calls decorators "attributes") `[group('Utility')]`
+- aliases `alias yo := howdy_net`
+- [bash strict mode](https://just.systems/man/en/safer-bash-shebang-recipes.html)
+- timestamps (`just --timestamp check`)
 
 ## cleanup
 
-```
+```bash
 git add . &&  git cim '🧹 cleanup'
 git push
 gh repo archive --yes
 ```
 
-## Why should we try this tool?
+## Why should we try this tool? (Conclusion)
 
 ```bash
 glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/CONCLUSION.md

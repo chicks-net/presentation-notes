@@ -8,7 +8,7 @@
 clear ; glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/OPENING.md
 ```
 
-### Why should we try this tool?
+### Why should we try this tool? (Intro)
 
 ```bash
 glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/FEATURES.md
@@ -174,6 +174,7 @@ just check
 ```bash
 git add . &&  git cim '🚚 tabs or spaces are fine'
 ```
+
 ## Extracting data from TOML
 
 ```bash
@@ -320,7 +321,7 @@ gh workflow view Verify
 just merge
 ```
 
-### Why should we try this tool?
+### Why should we try this tool? (Conclusion)
 
 ```bash
 glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/just-intro/CONCLUSION.md

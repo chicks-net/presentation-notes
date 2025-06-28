@@ -1,4 +1,4 @@
-```
+```ShellSession
  _   _     _                 _           _     _                                  _
 | | | |___(_)_ __   __ _    (_)_   _ ___| |_  | |_ ___    ___ _ __   ___  ___  __| |
 | | | / __| | '_ \ / _` |   | | | | / __| __| | __/ _ \  / __| '_ \ / _ \/ _ \/ _` |
@@ -15,7 +15,7 @@
 
 by Christopher "chicks" Hicks
 
-* Currently the Observability Lead at Tubi.
-* Previously an SRE at BrightRoll, OpenX, Telmate, McD Tech Labs, Yahoo! and Uber.
-* A shell user and instructor for 35 years.
-* Find my links and content at https://www.chicks.net/
+- Currently the Observability Lead at Tubi.
+- Previously an SRE at BrightRoll, OpenX, Telmate, McD Tech Labs, Yahoo! and Uber.
+- A shell user and instructor for 35 years.
+- Find my links and content at https://www.chicks.net/
