@@ -6,7 +6,7 @@ getting bogged down in the HOWTO aspect.
 ## ToC
 
 - Snippets - copy and paste snippets for the recorded demo
-  - [Snippets 1](./SNIPPETS.md) - the snippets 
+  - [Snippets 1](./SNIPPETS.md) - the snippets
 - Slides
   - [Opening](./OPENING.md) - title slide
   - [Features](./FEATURES.md) - intro/features slide
@@ -19,10 +19,13 @@ getting bogged down in the HOWTO aspect.
 
 ## Recordings
 
+- eventually...
 
 ## Title
 
 ???
+
+- Quick intro to `just` and `gh` for command line development
 
 ## Outline
 
