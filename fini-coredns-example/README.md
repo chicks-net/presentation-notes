@@ -19,7 +19,10 @@
 1. Feedback desired
 1. Conclusion
 1. Ending card
-  - previous just video
-  - ? chicks on community
-  - anything on dnscontrol
-  - anything on coredns
+
+## Ending card ideas
+
+- previous just video
+- ? chicks on community
+- anything on dnscontrol
+- anything on coredns
