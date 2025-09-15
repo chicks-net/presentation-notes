@@ -13,7 +13,7 @@
 - coredns
   - industry leading DNS server used in Kubernetes and many other places
 - just
-   - provides a modern replacement for make
-   - simplifies and unifies build and maintenance processes
+  - provides a modern replacement for make
+  - simplifies and unifies build and maintenance processes
 
 You will see more on all of those today.
