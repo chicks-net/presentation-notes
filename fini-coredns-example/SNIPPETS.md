@@ -14,16 +14,6 @@ clear ; glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-note
 glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/fini-coredns-example/FEATURES.md
 ```
 
-### Clone repo
-
-```bash
-gh repo 
-```
-
-```bash
-cd just-demo3
-```
-
 ### Agenda
 
 ```bash
@@ -32,21 +22,59 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 
 ### What is dnscontrol?
 
+```bash
+glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/fini-coredns-example/FEATURES_dnscontrol.md
+```
+
 ### What is coredns?
+
+```bash
+glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/fini-coredns-example/FEATURES_coredns.md
+```
 
 ### What is just?
 
+```bash
+glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/fini-coredns-example/FEATURES_just.md
+```
+
 ## dnscontrol in action
+
+### Clone repo
+
+```bash
+gh repo clone fini-net/fini-coredns-example
+```
+
+```bash
+cd fini-coredns-example
+```
 
 ### View code for defining domains
 
 ### `dnscontrol preview`
 
+```bash
+just preview
+```
+
 ### delete files
+
+```bash
+rm dns/zones/*
+```
 
 ### `dnscontrol preview` again
 
+```bash
+just preview
+```
+
 ### `dnscontrol push`
+
+```bash
+just push
+```
 
 ## just in action
 
@@ -66,9 +94,27 @@ just
 
 ### Run container
 
+```bash
+just run_con
+```
+
 ### Run dig test
 
+```bash
+just test_quick
+```
+
 ### Run go test
+
+```bash
+just test_dns
+```
+
+```bash
+just
+```
+
+Mention various choices for tests.
 
 ## Feedback desired
 
@@ -83,3 +129,10 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 ```
 
 ## Ending card
+
+```bash
+glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/heads/main/fini-coredns-example/ENDING_LINKS.md
+```
+
+Maximum ending card length is 20 seconds.  Tell people that the links
+will also be in the description.
