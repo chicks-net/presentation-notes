@@ -9,6 +9,9 @@
 - our fini-coredns-example repo
   - pulls together a variety of technologies to demonstrate how to serve DNS in a modern
     infrastructure with maximum automation and minimum toil.
+  - utilizes RFC-compliant example domains and IP ranges
+  - a variety of record types are shown including IPv6 addresses
+  - a podman/docker container that you can try out
 - dnscontrol
   - unique system for defining your domains and DNS records with JavaScript
 - coredns

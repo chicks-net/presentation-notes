@@ -8,6 +8,6 @@
 
 - Feedback is welcomed for this project and my others.
 - Github issues are the preferred way.
-- But given the tyrany of the algorithm I would never discourage you from making a comment on youtube.
+- But given the tyranny of the algorithm I would never discourage you from making a comment on youtube.
 - I have endeavored to follow best practices as much as possible.
   So if you notice anything that doesn't seem as good as it could be, let me know.
