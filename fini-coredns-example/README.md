@@ -1,5 +1,7 @@
 # fini-coredns-example demo/intro
 
+Quick demo of <https://github.com/fini-net/fini-coredns-example>
+
 ## Outline
 
 1. Opening
