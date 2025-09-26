@@ -40,6 +40,14 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 
 ## dnscontrol in action
 
+### Test in a clean environment (optional)
+
+```bash
+podman run -it ubuntu:24.04 bash -c "apt update && apt install -y gh && bash"
+```
+
+TODO: how we deal with github authentication?
+
 ### Clone repo
 
 ```bash
