@@ -62,6 +62,14 @@ cd fini-coredns-example
 
 ### View code for defining domains
 
+### List just recipes
+
+```bash
+just
+```
+
+Just a preview - we'll go over these again in a minute.
+
 ### `dnscontrol preview`
 
 ```bash
