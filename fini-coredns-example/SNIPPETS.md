@@ -43,10 +43,12 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 ### Test in a clean environment (optional)
 
 ```bash
-podman run -it ubuntu:24.04 bash -c "apt update && apt install -y gh && bash"
+podman run -it -e GITHUB_TOKEN=$(gh auth token) -e DEBIAN_FRONTEND=noninteractive -e TZ=UTC ubuntu:24.04 bash -c "apt update && apt install -y git gh podman rustup gcc jq golang && go install github.com/StackExchange/dnscontrol/v4@latest && rustup default stable && cargo install just && bash"
 ```
 
-TODO: how we deal with github authentication?
+```bash
+PATH=$PATH:/root/.cargo/bin:/root/go/bin && cd root
+```
 
 ### Clone repo
 
