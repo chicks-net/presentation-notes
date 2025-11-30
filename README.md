@@ -5,11 +5,14 @@
 
 Notes, links, and citations for presentations, videos, etc.
 
+## 2026
+
+- [Quick intro to Using just to speed development](./just-quick) is very early in draft form.
+- what is next?
+
 ## 2025
 
-- [Quick into to Using just to speed development](./just-quick) is very early in draft form.
 - [fini-coredns-example](./fini-coredns-example)
-- maybe more???
 
 ## 2024
 
