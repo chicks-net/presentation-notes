@@ -1,5 +1,13 @@
 # just intro snippets
 
+## Setup
+
+iTerm2 with
+
+- Pastel dark background
+- 111 columns and 40 rows
+- tmux messed up the colors (ugh!) so I couldn't have the clock in the terminal at the same time (sigh)
+
 ## Start
 
 ### Opening title
@@ -43,7 +51,7 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 ### Test in a clean environment (optional)
 
 ```bash
-podman run -it -e GITHUB_TOKEN=$(gh auth token) -e DEBIAN_FRONTEND=noninteractive -e TZ=UTC ubuntu:24.04 bash -c "apt update && apt install -y git gh podman rustup gcc jq golang && go install github.com/StackExchange/dnscontrol/v4@latest && rustup default stable && cargo install just && bash"
+podman run -it -e GITHUB_TOKEN=$(gh auth token) -e DEBIAN_FRONTEND=noninteractive -e TZ=UTC ubuntu:24.04 bash -c "apt update && apt install -y git gh podman rustup gcc jq golang dnsutils && go install github.com/StackExchange/dnscontrol/v4@latest && rustup default stable && cargo install just && bash"
 ```
 
 ```bash
@@ -107,6 +115,8 @@ but our repo makes it even easier...
 ```bash
 just
 ```
+
+Probably exit the container because of `podman` permisisons issue.
 
 ## container in action
 
