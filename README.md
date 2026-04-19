@@ -8,6 +8,7 @@ Notes, links, and citations for presentations, videos, etc.
 ## 2026
 
 - [Quick intro to Using just to speed development](./just-quick) is very early in draft form.
+- [AI braindump](./ai-braindump)
 - what is next?
 
 ## 2025
