@@ -22,7 +22,7 @@ removes a little dread from your day.
 - Thanks to the `gh` CLI for the extension model that makes tools like this one command away.
 - Thanks to Cap for the recording - first time recording with it, so the screen recorder is on trial here too.
 
-## This is on Youtube so please feed the algorithm. 🎥
+## This is on YouTube so please feed the algorithm. 🎥
 
 Every viewing, like, and comment encourages the mysterious algorithm to share
 this with other folks.  Regardless, I'd love to hear how you watch your CI if

@@ -13,6 +13,10 @@ does.
 - [ ] Terminal at 109 col x 37 rows, font bumped for video scale.
 - [ ] Do Not Disturb ON.
 - [ ] `gh auth status` is happy.
+- [ ] The external URLs still resolve - the dnscontrol PR and the gh-observer Actions run get swapped for fresher ones if GitHub has purged them.
+
+The snippets use my git aliases (`co`, `cim`, `pushup`) from my global
+gitconfig - https://github.com/chicks-net/chicks-home/blob/master/.gitconfig#L10
 
 ### Create the demo repo
 
@@ -26,7 +30,11 @@ cd gh-observer-demo
 A fast `lint` job (breakable on purpose) and a slow `test` job (live timers):
 
 ```bash
-printf -- '---\ndefault: True\nMD013: False\n' > .markdownlint.yml
+cat > .markdownlint.yml <<'YAML'
+---
+default: True
+MD013: False
+YAML
 mkdir -p .github/workflows
 cat > .github/workflows/ci.yml <<'YAML'
 ---
@@ -47,6 +55,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      # no actions/checkout needed - this job only sleeps
       - run: sleep 45
       - run: echo "tests passed"
 YAML
@@ -60,7 +69,7 @@ Historical averages need a few completed runs, so push a few trivial
 commits (each push is one completed run):
 
 ```bash
-for i in 1 2 3; do date >> warmups.txt && git add warmups.txt && git cim "🕒 warm up run history $i" && git push; done
+for i in 1 2 3; do date >> warmups.txt && git add warmups.txt && git cim "🕒 warm up run history $i" && git push || break; done
 ```
 
 Leave the shell in the demo clone - all demo beats below run from there.
@@ -165,7 +174,7 @@ gh observer --repo chicks-net/gh-observer-demo
 gh observer https://github.com/StackExchange/dnscontrol/pull/3941
 ```
 
-- full URL, no clone needed; merged PRs show their final summary
+- full URL, no clone needed; a PR with finished checks shows its final summary
 
 ## Optional: watch an Actions run
 
@@ -196,3 +205,4 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 
 - [ ] Merge the demo PR (or close it and reuse the repo for practice takes).
 - [ ] Fill in the Cap trial notes in the [README](./README.md#recordings).
+- [ ] Update the root README entry once the video is recorded.
