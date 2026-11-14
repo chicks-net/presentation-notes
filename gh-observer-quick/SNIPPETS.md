@@ -10,10 +10,11 @@ does.
 
 - [ ] This notes PR is merged to main so the slide URLs below work.
 - [ ] Cap test recording verified - see the [Recordings](./README.md#recordings) checklist.
-- [ ] Terminal at 109 col x 37 rows, font bumped for video scale.
+- [ ] Terminal sized per the [Cap setup checklist](./README.md#cap-setup-checklist), font bumped for video scale.
 - [ ] Do Not Disturb ON.
 - [ ] `gh auth status` is happy.
-- [ ] The external URLs still resolve - the dnscontrol PR and the gh-observer Actions run get swapped for fresher ones if GitHub has purged them.
+- [ ] The external URLs still resolve - the dnscontrol PR and the gh-observer Actions run get swapped for fresher ones if GitHub has purged them (any long-finished PR or completed run works as a replacement).
+- [ ] The demo repo warm-up runs came back green - if not, check that the `actions/checkout@v4` and `markdownlint-cli2-action@v19` tags still exist.
 
 The snippets use my git aliases (`co`, `cim`, `pushup`) from my global
 gitconfig - https://github.com/chicks-net/chicks-home/blob/master/.gitconfig#L10
@@ -93,14 +94,14 @@ glow -w 0 https://raw.githubusercontent.com/chicks-net/presentation-notes/refs/h
 ```bash
 gh extension install fini-net/gh-observer
 
-# already installed (likely, this repo lists it as a prerequisite)?
+# already installed (likely - .just/lib/install-prerequisites.sh lists it)?
 gh extension upgrade observer
 ```
 
 ### Open the demo PR
 
 ```bash
-cd gh-observer-demo   # or wherever the clone lives
+cd gh-observer-demo   # only if not already in the clone from prep
 git co -b demo-change
 printf '\ndemo change for the gh-observer quick intro video\n' >> README.md
 git add README.md && git cim '🪨 demo change'
@@ -189,7 +190,7 @@ gh observer https://github.com/fini-net/gh-observer/actions/runs/25856656092
 ```bash
 gh observer https://github.com/StackExchange/dnscontrol/pull/3941 ; echo "exit code: $?"
 
-# or wait on your own PR from a script
+# or wait on your own PR from a script - this one blocks until checks finish
 gh observer && echo "All checks passed!"
 ```
 
