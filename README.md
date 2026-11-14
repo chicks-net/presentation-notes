@@ -9,6 +9,7 @@ Notes, links, and citations for presentations, videos, etc.
 
 - [Quick intro to Using just to speed development](./just-quick) is very early in draft form.
 - [AI braindump](./ai-braindump)
+- [Quick intro to gh-observer](./gh-observer-quick) is very early in draft form.
 - what is next?
 
 ## 2025
